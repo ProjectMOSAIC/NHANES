@@ -1,0 +1,16 @@
+Package: NHANES
+Type: Package
+Title: NHANES data
+Version: 2.0
+Date: 2015-03-20
+Author: Randall Pruim <rpruim@calvin.edu>, Daniel Kaplan
+    <kaplan@macalester.edu>, Nicholas Horton <nhorton@amherst.edu>
+Maintainer: Randall Pruim <rpruim@calvin.edu>
+Description: Body Shape and related measurements from the US National Health
+    and Nutrition Examination Survey (NHANES, 1999-2004).  See
+    http://www.cdc.gov/nchs/nhanes.htm for details.
+License: GPL (>=2)
+Depends:
+    R (>= 3.0.0)
+LazyLoad: yes
+LazyData: yes

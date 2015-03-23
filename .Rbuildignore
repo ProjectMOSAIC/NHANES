@@ -1,0 +1,15 @@
+^sandbox$
+^bin$
+^RBuildIgnore$
+^\.Rproj\.user$
+^\.Rproj\.user/.*$
+^\.Rd2dvi.*$
+^.*\.swp$
+^.*\.swo$
+^\.git
+^.*bk$
+^.*~$
+^README\.mediawiki$
+^NHANES.*\.gz$
+^.*\.Rproj$
+^\.httr-oauth$

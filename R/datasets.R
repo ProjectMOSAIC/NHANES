@@ -19,28 +19,32 @@
 #'
 #' @details
 #'
-#' The NHANES target population is “the non-institutionalized civilian resident
-#' population of the United States”.  Our dataset is derived from the data
-#' available for the 2009-2010 and 2011-2012 sample years and has approximately
-#' 10,000 observations (people) and about 70 variables.  
-#' 
+#' The NHANES target population is "the non-institutionalized civilian resident
+#' population of the United States".  
 #' NHANES, (American National Health
 #' and Nutrition Examination surveys), use complex survey designs (see
 #' http://www.cdc.gov/nchs/data/series/sr_02/sr02_162.pdf) that oversample certain
 #' subpopulations like racial minorities. Naïve analysis of the original NHANES
 #' data can lead to mistaken conclusions. The percentages of people from each
 #' racial group in the data, for example, are quite different from the way they
-#' are in the population.  We have resampled the NHANES data to undo these
-#' oversampling effects. Our data can therefore be treated, for educational purposes, 
+#' are in the population.  
+#' 
+#' \code{NHANES} and \code{NHANESraw} 
+#' each include 75 variables available for the 2009-2010 and 2011-2012 sample years.
+#' \code{NHANESraw} has 20,293 observations of these variables plus for additional
+#' variables that describe that sample weighting scheme employed. 
+#' \code{NHANES} contains 10,000 rows of data resampled from 
+#' \code{NHANESraw} to undo these oversampling effects. 
+#' \code{NHANES} can be treated, for educational purposes, 
 #' as if it were a simple random sample from the American population.  
+#' 
 #' A list of the variables in
-#' the data set follows with variable descriptions and links to the original
+#' the data set follows appears below along with variable descriptions and links to the original
 #' NHANES documentation.
 #'
-#' 
 #'
 #' @section Disclamer:
-#' Please note that this data set is derived from the NHANES
+#' Please note that this \code{NHANES} is derived from the NHANES
 #' database.  It has been adapted for educational purposes.  As such, it is NOT
 #' suitable to use as a research-database.  For research purposes you should
 #' download original data files from the NHANES website and follow the analysis

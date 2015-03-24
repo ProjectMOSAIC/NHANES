@@ -10,10 +10,12 @@
 #'
 #' @docType data
 #' @name NHANES
+#' @aliases NHANESraw
 #' @usage data(NHANES)
+#' @usage data(NHANESraw)
 #'
-#'
-#' @format a data frame with 10000 observations of 75 variables.
+#' @format data frames with raw and resampled versions of the NHANES data.  See below for details 
+#' and descriptions of the varaibles.
 #'
 #' @details
 #'
@@ -47,11 +49,8 @@
 #' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes11_12.aspx}, and 
 #' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
 #'
-#' @section Variables:
+#' @section Demographic Variables:
 #'
-#' The NHANES2009-2012 dataset contains the following variables:
-#'
-#' Demographic Variables
 #' \describe{
 #' 	\item{ID}{ID number}
 #' 	\item{Gender}{Gender (sex) of study participant	coded as \code{male} or \code{female}}
@@ -81,6 +80,68 @@
 #' 	 \item{HomeOwn}{One of \code{Home}, \code{Rent}, or \code{Other} indicating whether 
 #' 	 the home of study participant or someone in their family is owned, rented or occupied 
 #' 	 by some other arrangement.}	
+#' }
+#' @section Lifestyle Variables:
+#' \describe{
+#' \item{PhysActive}{Participant does moderate or vigorous-intensity sports, fitness or recreational 
+#' activities (Yes or No).  Reported for participants 12 years or older.}
+#' \item{PhysActiveDays}{Number of days in a typical week that participant does moderate or 
+#' vigorous-intensity activity.  Reported for participants 12 years or older.}
+#' \item{TVHrsDay}{Number of hours per day on average participant watched TV over the 
+#' past 30 days. Reported for participants 2 years or older.  
+#' One of  \code{0_to_1hr}, \code{1_hr}, \code{2_hr}, \code{3_hr}, \code{4_hr}, \code{More_4_hr}.
+#' Not available 2009-2010.} 
+#' \item{CompHrsDay}{Number of hours per day on average participant used a computer or gaming 
+#' device over the past 30 days.  Reported for participants 2 years or older.  One of 
+#' \code{0_hrs}, \code{0_to_1hr}, \code{1_hr}, \code{2_hr}, \code{3_hr}, \code{4_hr}, \code{More_4_hr}.
+#' Not available 2009-2010.} 
+#' \item{TVHrsDayChild}{Number of hours per day on average participant watched TV over the past 30 days.
+#'  Reported for participants 2 to 11 years.
+#' Not available 2011-2012.} 
+#' \item{CompHrsDayChild}{Number of hours per day on average participant used a computer or gaming device 
+#' over the past 30 days.  Reported for participants 2 to 11 years old.
+#' Not available 2011-2012.}
+#' \item{Alcohol12PlusYr}{Participant has consumed at least 12 drinks of any type of alcoholic beverage 
+#' in any one year. Reported for participants 18 years or older as Yes or No.}
+#' \item{AlcoholDay}{Average number of drinks consumed on days that participant drank alcoholic 
+#' beverages.  Reported for participants aged 18 years or older.}
+#' \item{AlcoholYear}{Estimated number of days over the past year that participant drank 
+#' alcoholic beverages. Reported for participants aged 18 years or older.}
+#' \item{SmokeNow}{Study participant currently smokes cigarettes regularly. 
+#' Reported for participants aged 20 years or older as \code{Yes} or \code{No}.}
+#' \item{Smoke100}{Study participant has smoked at least 100 cigarettes in their entire life.
+#'  Reported for participants aged 20 years or older as \code{Yes} or \code{No}.}
+#' \item{SmokeAge}{Age study participant first started to smoke cigarettes fairly regularly. 
+#' Reported for participants aged 20 years or older.}
+#' \item{Marijuana}{Participant has tried marijuana. Reported for participants aged 18 to 59 years as
+#' \code{Yes} or \code{No}.}
+#' \code{AgeFirstMarij}{Age participant first tried marijuana. Reported for participants aged 18 to 59 years.}
+#' \item{RegularMarij}{Participant has been/is a regular marijuana user (used at least once a month for a year).
+#'  Reported for participants aged 18 to 59 years as \code{Yes} or \code{No}.}
+#' \item{AgeRegMarij}{Age of participant when first started regularly using marijuana. 
+#' Reported for participants aged 18 to 59 years.}
+#' \item{HardDrugs}{Participant has tried cocaine, crack cocaine, heroin or methamphetamine. 
+#' Reported for participants aged 18 to 69 years as \code{Yes} or \code{No}.}
+#' \item{SexEver}{Participant had had vaginal, anal, or oral sex.  
+#' Reported for participants aged 18 to 69 years as \code{Yes} or \code{No}.}
+#' \item{SexAge}{Age of participant when had sex for the first time. 
+#' Reported for participants aged 18 to 69 years.}
+#' \item{SexNumPartnLife}{Number of opposite sex partners participant has had any kind of sex with 
+#' over their lifetime.  Reported for participants aged 18 to 69 years.}
+#' \item{SexNumPartYear}{Number of opposite sex partners participant has had any kind of sex with over 
+#' the past 12 months. Reported for participants aged 18 to 59 years.}
+#' \item{SameSex}{Participant has had any kind of sex with a same sex partner. 
+#' Reported for participants aged 18 to 69 years ad \code{Yes} or \code{No}.}
+#' \items{SexOrientation}{Participant’s sexual orientation (self-described).    
+#' Reported for participants aged 18 to 59 years.
+#'  One of \code{Heterosexual}, \code{Homosexual}, \code{Bisexual}.}
+#' }
+#' 
+#' @section Weighting Variables (\code{NHANESraw} only):
+#' \describe{
+#'   \item{WTINT2YR, WTMEC2YR,  SDMVPSU,  SDMVSTRA}{Sample weighting variables.  See 
+#'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm#WTINT2YR} and 
+#'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_F.htm#WTINT2YR} for more details.}
 #' }
 #' 
 NA

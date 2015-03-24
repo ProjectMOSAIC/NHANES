@@ -1,4 +1,12 @@
-#' NHANES 2009-2012 with adjust weighting
+#' NHANES 2009-2012 with adjusted weighting
+#' 
+#' This is survey data collected by the US National Center for Health Statistics
+#' (NCHS) which has conducted a series of health and nutrition surveys since the
+#' early 1960's. Since 1999 approximately 5,000 individuals of all ages are
+#' interviewed in their homes every year and complete the health examination
+#' component of the survey. The health examination is conducted in a mobile
+#' examination centre (MEC).
+#' 
 #'
 #' @docType data
 #' @name NHANES
@@ -8,12 +16,6 @@
 #' @format a data frame with 10000 observations of 75 variables.
 #'
 #' @details
-#' This is survey data collected by the US National Center for Health Statistics
-#' (NCHS) which has conducted a series of health and nutrition surveys since the
-#' early 1960's. Since 1999 approximately 5,000 individuals of all ages are
-#' interviewed in their homes every year and complete the health examination
-#' component of the survey. The health examination is conducted in a mobile
-#' examination centre (MEC).
 #'
 #' The NHANES target population is “the non-institutionalized civilian resident
 #' population of the United States”.  Our dataset is derived from the data
@@ -51,46 +53,34 @@
 #'
 #' Demographic Variables
 #' \describe{
-#' 	\item{ID}
-#' 	  {ID number}
-#' 	\item{Gender}
-#' 	  {Gender (sex) of study participant	coded as \code{male} or \code{female}}
-#' 	\item{Age}
-#' 	  {Age in years at screening of study participant.  Note:  Subjects 80 years or older were
+#' 	\item{ID}{ID number}
+#' 	\item{Gender}{Gender (sex) of study participant	coded as \code{male} or \code{female}}
+#' 	\item{Age}{Age in years at screening of study participant.  Note:  Subjects 80 years or older were
 #' 	  recorded as 80.}
-#' 	\item{AgeDecade}
-#' 	  {Categorical variable derived from age with levels \code{0-9}, \code{10-19}, \dots \code{70+}}	
-#' 	\code{AgeMonths}
-#' 	  {Age in months at screening of study participant.  Reported
+#' 	\item{AgeDecade}{Categorical variable derived from age with levels \code{0-9}, \code{10-19}, \dots \code{70+}}	
+#' 	\item{AgeMonths}{Age in months at screening of study participant.  Reported
 #' 	  for participants aged 0 to 79 years for 2009 to 2010 data Reported for
 #' 	  participants aged 0 to 2 years for 2011 to 2012 data.} 
-#' 	\item{Race1}
-#' 	  {Reported race of study participant: Mexican, Hispanic White, Black, or Other.}
-#' 	\item{Race3}
-#' 	  {Reported race of study participant, including non-Hispanic Asian category:
-#' 		Mexican, Hispanic White, Black Asian, or Other}
-#' 	\item{Education} 
-#' 	  {Educational level of study participant Reported for participants aged 20 years or older.
+#' 	\item{Race1}{Reported race of study participant: Mexican, Hispanic, White, Black, or Other.}
+#' 	\item{Race3}{Reported race of study participant, including non-Hispanic Asian category:
+#' 		Mexican, Hispanic, White, Black, Asian, or Other}
+#' 	\item{Education}{Educational level of study participant Reported for participants aged 20 years or older.
 #' 		One of \code{8thGrade}, \code{9-11thGrade}, \code{HighSchool}, \code{SomeCollege}, or \code{CollegeGrad}.}
-#'     \item{MaritalStatus}
-#' 	  {Marital status of study participant.  Reported for participants aged 20 years or older.
+#'     \item{MaritalStatus}{Marital status of study participant.  Reported for participants aged 20 years or older.
 #' 	  One of \code{Married}, \code{Widowed}, \code{Divorced}, \code{Separated}, \code{NeverMarried}, or \code{LivePartner} (living with partner).}
 #' 
-#' 	\item{HHIncome}
-#' 	  {Total annual gross income for the household in US dollars.  One of 
+#' 	\item{HHIncome}{Total annual gross income for the household in US dollars.  One of 
 #'       \code{0 - 4999}, \code{5000 - 9,999}, 
 #' 	  \code{10000 - 14999}, \code{15000 - 19999}, \code{20000 - 24,999},
 #' 	  \coede{25000 - 34999}, \code{35000 - 44999}, \code{45000 - 54999}, \code{55000 - 64999}, \code{65000 - 74999},
 #' 	  \code{75000 - 99999}, or \code{100000 or More}.}
-#' 	\item{HHIncomeMid}
-#' 	  {Numerical version of \code{HHIncome} derived from the middle income in each category}
-#' 	\item{Poverty}
-#' 	  {A ratio of family income to poverty guidelines.  Smaller numbers indicate more poverty}
-#' 	\item{HomeRooms}
-#' 	  {How many rooms are in home of study participant (counting kitchen but not bathroom).
+#' 	\item{HHIncomeMid}{Numerical version of \code{HHIncome} derived from the middle income in each category}
+#' 	\item{Poverty}{A ratio of family income to poverty guidelines.  Smaller numbers indicate more poverty}
+#' 	\item{HomeRooms}{How many rooms are in home of study participant (counting kitchen but not bathroom).
 #' 	  13 rooms = 13 or more rooms.}
-#' 	 \item{HomeOwn}
-#' 	   {One of \code{Home}, \code{Rent}, or \code{Other} indicating whether 
+#' 	 \item{HomeOwn}{One of \code{Home}, \code{Rent}, or \code{Other} indicating whether 
 #' 	 the home of study participant or someone in their family is owned, rented or occupied 
 #' 	 by some other arrangement.}	
 #' }
+#' 
+NA

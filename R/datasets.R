@@ -53,12 +53,17 @@
 #' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes11_12.aspx}, and 
 #' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
 #'
+#' @section Study Variables:
+#'   \describe{
+#'     \item{SurveyYr}{Which survey the participant participated in.}
+#'     \item{ID}{Participant identifier.}
+#'   }
+#'   
 #' @section Demographic Variables:
 #' For more information on these demographic variables, see
 #' \url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm} or
 #' \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm}.
 #' \describe{
-#' 	\item{ID}{ID number}
 #' 	\item{Gender}{Gender (sex) of study participant	coded as \code{male} or \code{female}}
 #' 	\item{Age}{Age in years at screening of study participant.  Note:  Subjects 80 years or older were
 #' 	  recorded as 80.}
@@ -68,7 +73,7 @@
 #' 	  participants aged 0 to 2 years for 2011 to 2012 data.} 
 #' 	\item{Race1}{Reported race of study participant: Mexican, Hispanic, White, Black, or Other.}
 #' 	\item{Race3}{Reported race of study participant, including non-Hispanic Asian category:
-#' 		Mexican, Hispanic, White, Black, Asian, or Other}
+#' 		Mexican, Hispanic, White, Black, Asian, or Other.  Not availale for 2009-10.}
 #' 	\item{Education}{Educational level of study participant Reported for participants aged 20 years or older.
 #' 		One of \code{8thGrade}, \code{9-11thGrade}, \code{HighSchool}, \code{SomeCollege}, or \code{CollegeGrad}.}
 #'     \item{MaritalStatus}{Marital status of study participant.  Reported for participants aged 20 years or older.

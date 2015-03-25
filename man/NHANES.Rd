@@ -56,7 +56,9 @@ found on the NHANES websites \url{http://www.cdc.gov/nchs/nhanes.htm},
 
 \section{Demographic Variables}{
 
-
+For more information on these demographic variables, see
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm} or
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm}.
 \describe{
 	\item{ID}{ID number}
 	\item{Gender}{Gender (sex) of study participant	coded as \code{male} or \code{female}}
@@ -89,8 +91,109 @@ found on the NHANES websites \url{http://www.cdc.gov/nchs/nhanes.htm},
 }
 }
 
+\section{Physical Measurements}{
+
+For more information on body measurements, see
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/BMX_F.htm} and
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/BMX_G.htm}.
+\describe{
+\item{Weight}{Weight in kg}
+\item{Length}{Recumbent length in cm. Reported for participants aged 0 – 3 years.
+}
+\item{HeadCirc}{Head circumference in cm.
+Reported for participants aged 0 years (0 – 6 months).}
+\item{Height}{Standing height in cm. Reported for participants aged 2 years or older.}
+\item{BMI}{Body mass index (weight/height2 in kg/m2).
+Reported for participants aged 2 years or older.}
+\item{BMICatUnder20yrs}{Body mass index category.
+      Reported for participants aged 2 to 19 years.
+      One of
+      \code{UnderWeight} (BMI < 5th percentile)
+      \code{NormWeight} (BMI 5th to < 85th percentile),
+      \code{OverWeight} (BMI 85th to < 95th percentile),
+      \code{Obese} (BMI ≥ 95th percentile).}
+\item{BMI_WHO}{Body mass index category.
+Reported for participants aged 2 years or older.
+One of \code{12.0_18.4}, \code{18.5_24.9}, \code{25.0_29.9}, or \code{30.0_plus}.}
+\item{Pulse}{60 second pulse rate}
+\item{BPSysAve}{Combined systolic blood pressure reading,
+following the procedure outlined for BPXSAR.}
+\item{BPDiaAve}{Combined diastolic blood pressure reading,
+following the procedure outlined for BPXDAR.}
+\item{BPSys1}{Systolic blood pressure in mm Hg – first reading}
+\item{BPDia1}{Diastolic blood pressure in mm Hg – second reading (consecutive readings)}
+\item{BPSys2}{Systolic blood pressure in mm Hg – second reading (consecutive readings)}
+\item{BPDia2}{Diastolic blood pressure in mm Hg – second reading}
+\item{BPSys3}{Systolic blood pressure in mm Hg – third reading (consecutive readings)}
+\item{BPDia3}{Diastolic blood pressure in mm Hg – third reading (consecutive readings)}
+\item{Testosterone}{Testerone total (ng/dL). Reported for participants aged 6 years or
+      older. Not available for 2009-2010.}
+}
+}
+
+\section{Health Variables}{
+
+For more information on these variables, see
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/HDL_F.htm} or
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/HDL_G.htm}.
+\describe{
+\item{DirectChol}{Direct HDL cholesterol in mmol/L.
+      Reported for participants aged 6 years or older.}
+\item{TotChol}{Total HDL cholesterol in mmol/L.
+      Reported for participants aged 6 years or older.}
+\item{UrineVol1}{Urine volume in mL – first test.
+      Reported for participants aged 6 years or older.}
+\item{UrineFlow1}{Urine flow rate
+      (urine volume/time since last urination)
+      in mL/min – first test.
+      Reported for participants aged 6 years or older.}
+\item{UrineVol2}{Urine volume in mL – second test.
+      Reported for participants aged 6 years or older.}
+\item{UrineFlow2}{Urine flow rate
+      (urine volume/time since last urination)
+      in mL/min – second test.
+      Reported for participants aged 6 years or older.}
+\item{Diabetes}{Study participant told by a doctor or health professional
+that they have diabetes. Reported for participants aged 1 year or older
+as \code{Yes} or \code{No}.}
+\item{DiabetesAge}{Age of study participant when first told they had diabetes.
+      Reported for participants aged 1 year or older.}
+\item{HealthGen}{Self-reported rating of participant’s health in general
+            Reported for participants aged 12 years or older.
+            One of  \code{Excellent}, \code{Vgood}, \code{Good}, \code{Fair}, or \code{Poor}.}
+\item{DaysPhysHlthBad}{Self-reported number of days participant’s physical health was
+      not good out of the past 30 days. Reported for participants aged 12 years or older.}
+\item{DaysMentHlthBad}{Self-reported number of days participant’s mental health was not
+      good out of the past 30 days. Reported for participants aged 12 years or older.}
+\item{LittleInterest}{Self-reported number of days where participant had little
+interest in doing things. Reported for participants aged 18 years or older.
+One of  \code{None}, \code{Several}, \code{Majority} (more than half the days),
+or \code{AlmostAll}.}
+\item{Depressed}{Self-reported number of days where participant felt down,
+      depressed or hopeless. Reported for participants aged 18 years or older.
+One of  \code{None}, \code{Several}, \code{Majority} (more than half the days),
+or \code{AlmostAll}.}
+\item{nPregnancies}{How many times participant has been pregnant.
+      Reported for female participants aged 20 years or older.}
+\item{nBabies}{How many of participants deliveries resulted in live births.
+               Reported for female participants aged 20 years or older.}
+\item{Age1stBaby}{Age of participant at time of first live birth.
+                 14 years or under = 14,  45 years or older = 45.
+                 Reported for female participants aged 20 years or older.}
+\item{SleepHrsNight}{Self-reported number of hours study participant usually gets
+                    at night on weekdays or workdays. Reported for participants aged
+                    16 years and older.}
+\item{SleepTrouble}{Participant has told a doctor or other health professional that they
+                    had trouble sleeping. Reported for participants aged 16 years and older.
+                    Coded as \code{Yes} or \code{No}.}
+}
+}
+
 \section{Lifestyle Variables}{
 
+More information about these variables is available at
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/SMQ_F.htm} or
+\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/SMQ_G.htm}.
 \describe{
 \item{PhysActive}{Participant does moderate or vigorous-intensity sports, fitness or recreational
 activities (Yes or No).  Reported for participants 12 years or older.}

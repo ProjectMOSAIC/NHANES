@@ -77,7 +77,7 @@
 #' 	\item{HHIncome}{Total annual gross income for the household in US dollars.  One of 
 #'       \code{0 - 4999}, \code{5000 - 9,999}, 
 #' 	  \code{10000 - 14999}, \code{15000 - 19999}, \code{20000 - 24,999},
-#' 	  \coede{25000 - 34999}, \code{35000 - 44999}, \code{45000 - 54999}, \code{55000 - 64999}, \code{65000 - 74999},
+#' 	  \code{25000 - 34999}, \code{35000 - 44999}, \code{45000 - 54999}, \code{55000 - 64999}, \code{65000 - 74999},
 #' 	  \code{75000 - 99999}, or \code{100000 or More}.}
 #' 	\item{HHIncomeMid}{Numerical version of \code{HHIncome} derived from the middle income in each category}
 #' 	\item{Poverty}{A ratio of family income to poverty guidelines.  Smaller numbers indicate more poverty}
@@ -234,7 +234,7 @@
 #' the past 12 months. Reported for participants aged 18 to 59 years.}
 #' \item{SameSex}{Participant has had any kind of sex with a same sex partner. 
 #' Reported for participants aged 18 to 69 years ad \code{Yes} or \code{No}.}
-#' \items{SexOrientation}{Participant’s sexual orientation (self-described).    
+#' \item{SexOrientation}{Participant’s sexual orientation (self-described).    
 #' Reported for participants aged 18 to 59 years.
 #'  One of \code{Heterosexual}, \code{Homosexual}, \code{Bisexual}.}
 #' }

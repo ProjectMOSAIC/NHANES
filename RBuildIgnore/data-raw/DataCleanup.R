@@ -34,3 +34,12 @@ levels(NHANESraw$Education) <- c("8th Grade", "9 - 11th Grade", "High School", "
 
 NHANESraw$Race1 <- reLevel(NHANESraw$Race1, c("Black", "Hispanic", "Mexican", "White", "Other"))
 NHANESraw$Race3 <- reLevel(NHANESraw$Race3, c("Asian", "Black", "Hispanic", "Mexican", "White", "Other"))
+
+NHANESraw <- 
+  dplyr::rename(NHANESraw, 
+                TVHrsDay = TVHrsDay.1, 
+                PhysActiveDays = PhyActiveDays, 
+                CompHrsDayChild = ComputerHrsDayChild
+  )
+
+# save as rda files if all looks good here.

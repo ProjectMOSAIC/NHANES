@@ -37,9 +37,12 @@ NHANESraw$Race3 <- reLevel(NHANESraw$Race3, c("Asian", "Black", "Hispanic", "Mex
 
 NHANESraw <- 
   dplyr::rename(NHANESraw, 
-                TVHrsDay = TVHrsDay.1, 
+                CompHrsDay = TVHrsDay.1,     # need to confirm this
                 PhysActiveDays = PhyActiveDays, 
                 CompHrsDayChild = ComputerHrsDayChild
   )
 
+# Note:  TVHrsDay and TVHrsDay.1 in NHANESraw
 # save as rda files if all looks good here.
+# save(NHANES, file="../../data/NHANES.rda")
+# save(NHANESraw, file="../../data/NHANESraw.rda")

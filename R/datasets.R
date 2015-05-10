@@ -21,6 +21,33 @@
 #' @format data frames with raw and resampled versions of the NHANES data.  See below for details 
 #' and descriptions of the varaibles.
 #'
+#'
+#' @section NHANES warning:
+#' The following warning comes directly from the NHANES web site:
+#' 
+#' For NHANES datasets, the use of sampling weights and sample design variables 
+#' is recommended for all analyses because the sample design is a clustered design 
+#' and incorporates differential probabilities of selection.  
+#' If you fail to account for the sampling parameters, you may obtain biased estimates 
+#' and overstate significance levels.
+#' 
+#' @section Disclamer:
+#' Please note that the data sets provided in this package are derived from the 
+#' NHANES database and have been adapted for educational purposes.  
+#' As such, they are NOT
+#' suitable for use as a research database.  For research purposes you should
+#' download original data files from the NHANES website and follow the analysis
+#' instructions given there. Further details and relevant documentation can be
+#' found on the following NHANES websites 
+#' \itemize{
+#' \item
+#' \url{http://www.cdc.gov/nchs/nhanes.htm},
+#' \item
+#' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes11_12.aspx}, and 
+#' \item
+#' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
+#' }
+#'
 #' @details
 #'
 #' The NHANES target population is "the non-institutionalized civilian resident
@@ -35,7 +62,7 @@
 #' 
 #' \code{NHANES} and \code{NHANESraw} 
 #' each include 75 variables available for the 2009-2010 and 2011-2012 sample years.
-#' \code{NHANESraw} has 20,293 observations of these variables plus for additional
+#' \code{NHANESraw} has 20,293 observations of these variables plus four additional
 #' variables that describe that sample weighting scheme employed. 
 #' \code{NHANES} contains 10,000 rows of data resampled from 
 #' \code{NHANESraw} to undo these oversampling effects. 
@@ -47,16 +74,7 @@
 #' NHANES documentation.
 #'
 #'
-#' @section Disclamer:
-#' Please note that this \code{NHANES} is derived from the NHANES
-#' database.  It has been adapted for educational purposes.  As such, it is NOT
-#' suitable to use as a research-database.  For research purposes you should
-#' download original data files from the NHANES website and follow the analysis
-#' instructions given there. Further details and relevant documentation can be
-#' found on the NHANES websites \url{http://www.cdc.gov/nchs/nhanes.htm},
-#' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes11_12.aspx}, and 
-#' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
-#'
+
 #' @section Study Variables:
 #'   \describe{
 #'     \item{SurveyYr}{Which survey the participant participated in.}
@@ -250,9 +268,17 @@
 #' 
 #' @section Weighting Variables (\code{NHANESraw} only):
 #' \describe{
-#'   \item{WTINT2YR, WTMEC2YR,  SDMVPSU,  SDMVSTRA}{Sample weighting variables.  See 
+#'   \item{WTINT2YR, WTMEC2YR,  SDMVPSU,  SDMVSTRA}{Sample weighting variables.  
+#'   For more details see one of the following.
+#'   \itemize{
+#'   \item
+#'   \url{http://www.cdc.gov/Nchs/tutorials/environmental/orientation/sample_design/index.htm}
+#'   \item
 #'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm#WTINT2YR} and 
-#'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm#WTINT2YR} for more details.}
+#'   \item
+#'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm#WTINT2YR} 
+#'   }
+#'   }
 #' }
 #' 
 NA

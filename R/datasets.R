@@ -47,6 +47,11 @@
 #' \item
 #' \url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
 #' }
+#' 
+#' @source
+#' These data were originally assembled by Chris Wild for use in statistics courses 
+#' at the University of Auckland.
+#' 
 #'
 #' @details
 #'

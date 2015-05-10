@@ -7,6 +7,10 @@
 \title{NHANES 2009-2012 with adjusted weighting}
 \format{data frames with raw and resampled versions of the NHANES data.  See below for details
 and descriptions of the varaibles.}
+\source{
+These data were originally assembled by Chris Wild for use in statistics courses
+at the University of Auckland.
+}
 \usage{
 data(NHANES)
 }

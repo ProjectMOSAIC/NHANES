@@ -252,7 +252,7 @@
 #' \describe{
 #'   \item{WTINT2YR, WTMEC2YR,  SDMVPSU,  SDMVSTRA}{Sample weighting variables.  See 
 #'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm#WTINT2YR} and 
-#'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_F.htm#WTINT2YR} for more details.}
+#'   \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm#WTINT2YR} for more details.}
 #' }
 #' 
 NA

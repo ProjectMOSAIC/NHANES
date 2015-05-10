@@ -13,6 +13,10 @@
 #' @aliases NHANESraw
 #' @usage data(NHANES)
 #' @usage data(NHANESraw)
+#' @examples
+#' # Due to the sampling design, some races were over/under-sampled.
+#' tally(~Race1, data=NHANES, format="prop")
+#' tally(~Race1, data=NHANESraw, format="prop")
 #'
 #' @format data frames with raw and resampled versions of the NHANES data.  See below for details 
 #' and descriptions of the varaibles.

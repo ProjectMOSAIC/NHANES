@@ -8,8 +8,9 @@
 \format{data frames with raw and resampled versions of the NHANES data.  See below for details
 and descriptions of the varaibles.}
 \source{
-These data were originally assembled by Chris Wild for use in statistics courses
-at the University of Auckland.
+These data were originally assembled by Michelle Dalrymple of Cashmere High School
+and Chris Wild of the University of Auckland, New Zealand for use in teaching
+statistics.
 }
 \usage{
 data(NHANES)

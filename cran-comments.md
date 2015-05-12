@@ -1,8 +1,9 @@
 
 ## Test environments
 
-* local OS X install, R version 3.2.0 Patched (2015-04-26 r68264)
-* win-builder (devel and release) on 2015-05-12
+ * local OS X: R version 3.2.0 Patched (2015-04-26 r68264)
+ * win-builder: (devel and release) on 2015-05-12
+ * Linux (via travis): on 2015-05-12
 
 ## R CMD check results
 

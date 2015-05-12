@@ -298,7 +298,10 @@ Reported for participants aged 18 to 59 years.
 }
 \examples{
 # Due to the sampling design, some races were over/under-sampled.
-tally(~Race1, data=NHANES, format="prop")
-tally(~Race1, data=NHANESraw, format="prop")
+rbind(
+  NHANES = table(NHANES$Race1) / nrow(NHANES),
+  NHANESraw = table(NHANESraw$Race1) / nrow(NHANESraw),
+  diff = (table(NHANES$Race1) - table(NHANESraw$Race1)) / nrow(NHANESraw)
+)
 }
 

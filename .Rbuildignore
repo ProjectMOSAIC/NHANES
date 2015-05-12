@@ -17,3 +17,4 @@
 ^data-raw$
 ^News\.md$
 ^cran-comments\.md$
+^\.travis\.yml$

@@ -1,5 +1,7 @@
 # NHANES package
 
+[![Travis-CI Build Status](https://travis-ci.org/ProjectMOSAIC/NHANES.svg?branch=master)](https://travis-ci.org/ProjectMOSAIC/NHANES)
+
 The `NHANES` package contains two version of a data set from the US National Health and Nutrition Examination Study.
 
  * `NHANESraw` contains data from the NHANES website, recoded to make it easier to work with in R.

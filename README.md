@@ -1,2 +1,8 @@
-# NHANES
-R package containing versions of NHANES data
+# NHANES package
+
+The `NHANES` package contains two version of a data set from the US National Health and Nutrition Examination Study.
+
+ * `NHANESraw` contains data from the NHANES website, recoded to make it easier to work with in R.
+ * `NHANES` contains a resampled version of this that takes into account the sampling scheme employed.  The resulting data set is a reasonable approxiamtion to a simple random sample fron the US population.
+ 
+See the help pages for the data sets for more details.

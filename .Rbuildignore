@@ -13,3 +13,4 @@
 ^NHANES.*\.gz$
 ^.*\.Rproj$
 ^\.httr-oauth$
+^data-raw$

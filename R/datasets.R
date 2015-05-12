@@ -64,7 +64,7 @@
 #' NHANES, (American National Health
 #' and Nutrition Examination surveys), use complex survey designs (see
 #' http://www.cdc.gov/nchs/data/series/sr_02/sr02_162.pdf) that oversample certain
-#' subpopulations like racial minorities. Naïve analysis of the original NHANES
+#' subpopulations like racial minorities. Naive analysis of the original NHANES
 #' data can lead to mistaken conclusions. The percentages of people from each
 #' racial group in the data, for example, are quite different from the way they
 #' are in the population.  
@@ -130,10 +130,10 @@
 #' \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/BMX_G.htm}.
 #' \describe{
 #' \item{Weight}{Weight in kg}
-#' \item{Length}{Recumbent length in cm. Reported for participants aged 0 – 3 years.
+#' \item{Length}{Recumbent length in cm. Reported for participants aged 0 - 3 years.
 #' }
 #' \item{HeadCirc}{Head circumference in cm.  
-#' Reported for participants aged 0 years (0 – 6 months).}
+#' Reported for participants aged 0 years (0 - 6 months).}
 #' \item{Height}{Standing height in cm. Reported for participants aged 2 years or older.}
 #' \item{BMI}{Body mass index (weight/height2 in kg/m2). 
 #' Reported for participants aged 2 years or older.}
@@ -143,7 +143,7 @@
 #'       \code{UnderWeight} (BMI < 5th percentile)
 #'       \code{NormWeight} (BMI 5th to < 85th percentile),
 #'       \code{OverWeight} (BMI 85th to < 95th percentile),
-#'       \code{Obese} (BMI ≥ 95th percentile).}
+#'       \code{Obese} (BMI >= 95th percentile).}
 #' \item{BMI_WHO}{Body mass index category. 
 #' Reported for participants aged 2 years or older.
 #' One of \code{12.0_18.4}, \code{18.5_24.9}, \code{25.0_29.9}, or \code{30.0_plus}.}
@@ -152,12 +152,12 @@
 #' following the procedure outlined for BPXSAR.}
 #' \item{BPDiaAve}{Combined diastolic blood pressure reading, 
 #' following the procedure outlined for BPXDAR.}
-#' \item{BPSys1}{Systolic blood pressure in mm Hg – first reading}
-#' \item{BPDia1}{Diastolic blood pressure in mm Hg – second reading (consecutive readings)}
-#' \item{BPSys2}{Systolic blood pressure in mm Hg – second reading (consecutive readings)}
-#' \item{BPDia2}{Diastolic blood pressure in mm Hg – second reading}
-#' \item{BPSys3}{Systolic blood pressure in mm Hg – third reading (consecutive readings)}
-#' \item{BPDia3}{Diastolic blood pressure in mm Hg – third reading (consecutive readings)}
+#' \item{BPSys1}{Systolic blood pressure in mm Hg -- first reading}
+#' \item{BPDia1}{Diastolic blood pressure in mm Hg -- second reading (consecutive readings)}
+#' \item{BPSys2}{Systolic blood pressure in mm Hg -- second reading (consecutive readings)}
+#' \item{BPDia2}{Diastolic blood pressure in mm Hg -- second reading}
+#' \item{BPSys3}{Systolic blood pressure in mm Hg  third reading (consecutive readings)}
+#' \item{BPDia3}{Diastolic blood pressure in mm Hg -- third reading (consecutive readings)}
 #' \item{Testosterone}{Testerone total (ng/dL). Reported for participants aged 6 years or 
 #'       older. Not available for 2009-2010.}
 #' }
@@ -170,29 +170,29 @@
 #'       Reported for participants aged 6 years or older.}
 #' \item{TotChol}{Total HDL cholesterol in mmol/L.
 #'       Reported for participants aged 6 years or older.}
-#' \item{UrineVol1}{Urine volume in mL – first test.
+#' \item{UrineVol1}{Urine volume in mL -- first test.
 #'       Reported for participants aged 6 years or older.}
 #' \item{UrineFlow1}{Urine flow rate 
 #'       (urine volume/time since last urination) 
-#'       in mL/min – first test. 
+#'       in mL/min -- first test. 
 #'       Reported for participants aged 6 years or older.}
-#' \item{UrineVol2}{Urine volume in mL – second test.
+#' \item{UrineVol2}{Urine volume in mL -- second test.
 #'       Reported for participants aged 6 years or older.}
 #' \item{UrineFlow2}{Urine flow rate 
 #'       (urine volume/time since last urination) 
-#'       in mL/min – second test. 
+#'       in mL/min -- second test. 
 #'       Reported for participants aged 6 years or older.}
 #' \item{Diabetes}{Study participant told by a doctor or health professional 
 #' that they have diabetes. Reported for participants aged 1 year or older
 #' as \code{Yes} or \code{No}.}
 #' \item{DiabetesAge}{Age of study participant when first told they had diabetes.
 #'       Reported for participants aged 1 year or older.}
-#' \item{HealthGen}{Self-reported rating of participant’s health in general
+#' \item{HealthGen}{Self-reported rating of participant's health in general
 #'             Reported for participants aged 12 years or older.  
 #'             One of  \code{Excellent}, \code{Vgood}, \code{Good}, \code{Fair}, or \code{Poor}.}
-#' \item{DaysPhysHlthBad}{Self-reported number of days participant’s physical health was 
+#' \item{DaysPhysHlthBad}{Self-reported number of days participant's physical health was 
 #'       not good out of the past 30 days. Reported for participants aged 12 years or older.}
-#' \item{DaysMentHlthBad}{Self-reported number of days participant’s mental health was not 
+#' \item{DaysMentHlthBad}{Self-reported number of days participant's mental health was not 
 #'       good out of the past 30 days. Reported for participants aged 12 years or older.}
 #' \item{LittleInterest}{Self-reported number of days where participant had little 
 #' interest in doing things. Reported for participants aged 18 years or older.
@@ -270,7 +270,7 @@
 #' the past 12 months. Reported for participants aged 18 to 59 years.}
 #' \item{SameSex}{Participant has had any kind of sex with a same sex partner. 
 #' Reported for participants aged 18 to 69 years ad \code{Yes} or \code{No}.}
-#' \item{SexOrientation}{Participant’s sexual orientation (self-described).    
+#' \item{SexOrientation}{participant's sexual orientation (self-described).    
 #' Reported for participants aged 18 to 59 years.
 #'  One of \code{Heterosexual}, \code{Homosexual}, \code{Bisexual}.}
 #' }

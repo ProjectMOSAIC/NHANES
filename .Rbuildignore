@@ -1,6 +1,7 @@
 ^sandbox$
 ^bin$
 ^RBuildIgnore$
+^NHANES_.*tar.gz$
 ^\.Rproj\.user$
 ^\.Rproj\.user/.*$
 ^\.Rd2dvi.*$

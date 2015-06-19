@@ -208,7 +208,7 @@ or \code{AlmostAll}.}
 \item{nBabies}{How many of participants deliveries resulted in live births.
                Reported for female participants aged 20 years or older.}
 \item{PregnantNow}{Pregnancy status at the time of the health examination
-was ascertained for females 8–59 years of age.
+was ascertained for females 8-59 years of age.
 Due to disclosure risks pregnancy status was only be released for women 20-44
 years of age. The information used included urine pregnancy test results
 and self-reported pregnancy status. Urine pregnancy tests were performed prior

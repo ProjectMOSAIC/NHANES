@@ -207,6 +207,22 @@ or \code{AlmostAll}.}
       Reported for female participants aged 20 years or older.}
 \item{nBabies}{How many of participants deliveries resulted in live births.
                Reported for female participants aged 20 years or older.}
+\item{PregnantNow}{Pregnancy status at the time of the health examination
+was ascertained for females 8–59 years of age.
+Due to disclosure risks pregnancy status was only be released for women 20-44
+years of age. The information used included urine pregnancy test results
+and self-reported pregnancy status. Urine pregnancy tests were performed prior
+to the dual energy x-ray absorptiometry (DXA) exam.
+Persons who reported they were pregnant at the time of exam were assumed to
+be pregnant. As a result, if the urine test was negative, but the subject
+reported they were pregnant, the status was coded as \code{"Yes"}.
+If the urine pregnancy results were negative and the respondent stated that they
+were not pregnant, the respondent was coded as \code{"No"} If the urine pregnancy
+results were negative and the respondent did not know her pregnancy status,
+the respondent was coded \code{"unknown"}  Persons who were interviewed,
+but not examined also have a value of \code{"unknown"}. In addition
+there are missing values.
+}
 \item{Age1stBaby}{Age of participant at time of first live birth.
                  14 years or under = 14,  45 years or older = 45.
                  Reported for female participants aged 20 years or older.}

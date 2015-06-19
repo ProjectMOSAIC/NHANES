@@ -1,13 +1,14 @@
 
 reLevel <- function(x, first) {
+  x <- as.factor(x)
   lev <- levels(x)
   if (! all(first %in% lev)) stop("levels must already exist")
   first <- match(first, lev)
   factor(x, lev[c(first, seq_along(lev)[-first])]) 
 }
 
-NHANES <- mosaic::read.file("NHANES.csv")
-NHANESraw <- mosaic::read.file("NHANESraw.csv")
+NHANES <- read.csv("NHANES.csv", header=TRUE)
+NHANESraw <- read.csv("NHANESraw.csv", header=TRUE)
 
 ## recode categorical variables
 
@@ -31,7 +32,6 @@ levels(NHANESraw$BMICatUnder20yrs) <- c("UnderWeight", "NormWeight", "OverWeight
 NHANESraw$HomeOwn <- reLevel(NHANESraw$HomeOwn, c("Own", "Rent", "Other"))
 levels(NHANESraw$Education) <- c("8th Grade", "9 - 11th Grade", "High School", "Some College", "College Grad")
 
-
 NHANESraw$Race1 <- reLevel(NHANESraw$Race1, c("Black", "Hispanic", "Mexican", "White", "Other"))
 NHANESraw$Race3 <- reLevel(NHANESraw$Race3, c("Asian", "Black", "Hispanic", "Mexican", "White", "Other"))
 
@@ -42,7 +42,10 @@ NHANESraw <-
                 CompHrsDayChild = ComputerHrsDayChild
   )
 
+source("addVars.R")
+
 # Note:  TVHrsDay and TVHrsDay.1 in NHANESraw
+
 # save as rda files if all looks good here.
-# save(NHANES, file="../../data/NHANES.rda")
-# save(NHANESraw, file="../../data/NHANESraw.rda")
+# devtools::use_data(NHANES, overwrite = TRUE)
+# devtools::use_data(NHANESraw, overwrite = TRUE)

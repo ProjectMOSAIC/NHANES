@@ -1,8 +1,6 @@
 require(Hmisc)
 require(dplyr)
-require(NHANES)
-data(NHANES)
-data(NHANESraw)
+
 
 # fetched from http://wwwn.cdc.gov/Nchs/Nhanes/2011-2012/DEMO_G.XPT
 if (!file.exists("DEMO_G.rds")) {
@@ -34,7 +32,7 @@ Merge <- function(current, new) {
 Extra <-
   bind_rows(dem0910, dem1112) %>%
   mutate( 
-    Pregnant = mosaic::derivedFactor(
+    PregnantNow = mosaic::derivedFactor(
       Yes      = ridexprg == 1,
       No       = ridexprg == 2,
       Unknown  = ridexprg ==3,
@@ -44,9 +42,9 @@ Extra <-
   ) 
   
 NHANES <- 
-  Merge(NHANES, Extra %>% select(seqn, Pregnant, sddsrvyr)) %>%
+  Merge(NHANES, Extra %>% select(seqn, PregnantNow, sddsrvyr)) %>%
   select(-sddsrvyr)
 
 NHANESraw <- 
-  Merge(NHANESraw, Extra %>% select(seqn, Pregnant, sddsrvyr)) %>%
+  Merge(NHANESraw, Extra %>% select(seqn, PregnantNow, sddsrvyr)) %>%
   select(-sddsrvyr)

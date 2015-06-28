@@ -20,6 +20,19 @@
 #'   NHANESraw = table(NHANESraw$Race1) / nrow(NHANESraw),
 #'   diff = (table(NHANES$Race1) - table(NHANESraw$Race1)) / nrow(NHANESraw)
 #' )
+#' # SmokeNow is only asked of people who answer Yes to Smoke100
+#' if (require(mosaic)) {
+#'   nhanes <- 
+#'     NHANES %>% 
+#'     mutate(
+#'       SmokingStatus = derivedFactor(
+#'         Current = SmokeNow == "Yes",
+#'         Former = SmokeNow == "No",
+#'         Never  = Smoke100 == "No"
+#'         )
+#'       )
+#'    tally( ~SmokingStatus, data = nhanes )
+#' }
 #'
 #' @format data frames with raw and resampled versions of the NHANES data.  See below for details 
 #' and descriptions of the varaibles.
@@ -262,7 +275,9 @@
 #' \item{AlcoholYear}{Estimated number of days over the past year that participant drank 
 #' alcoholic beverages. Reported for participants aged 18 years or older.}
 #' \item{SmokeNow}{Study participant currently smokes cigarettes regularly. 
-#' Reported for participants aged 20 years or older as \code{Yes} or \code{No}.}
+#' Reported for participants aged 20 years or older as \code{Yes} or \code{No}, provieded they
+#' answered Yes to having somked 100 or more cigarettes in their life time.  All subjects who 
+#' have not smoked 100 or more cigarettes are listed as \code{NA} here.}
 #' \item{Smoke100}{Study participant has smoked at least 100 cigarettes in their entire life.
 #'  Reported for participants aged 20 years or older as \code{Yes} or \code{No}.}
 #' \item{SmokeAge}{Age study participant first started to smoke cigarettes fairly regularly. 
@@ -306,4 +321,5 @@
 #'   }
 #' }
 #' 
+
 NA

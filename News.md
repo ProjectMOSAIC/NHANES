@@ -1,6 +1,9 @@
 # NHANES package NEWS
 
-## NHANES 2.0.9000+
+## NHANES 2.1
+
+ * New variable added:  `PregnantNow`.  (#1, #2)
+ * Better documentation of a potentially confusing aspect of the smoking variables. (#3)
 
 
 ## NHANES 2.0

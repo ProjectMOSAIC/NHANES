@@ -2,7 +2,7 @@
 NHANES package
 ==============
 
-[![Travis-CI Build Status](https://travis-ci.org/ProjectMOSAIC/NHANES.svg?branch=master)](https://travis-ci.org/ProjectMOSAIC/NHANES)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/NHANES)](http://cran.r-project.org/web/packages/NHANES) [![Travis-CI Build Status](https://travis-ci.org/ProjectMOSAIC/NHANES.svg?branch=master)](https://travis-ci.org/ProjectMOSAIC/NHANES)
 
 The `NHANES` package contains two version of a data set from the US National Health and Nutrition Examination Study.
 

@@ -1,8 +1,8 @@
 Package: NHANES
 Type: Package
 Title: Data from the US National Health and Nutrition Examination Study
-Version: 2.0.9001
-Date: 2015-06-19
+Version: 2.1
+Date: 2015-07-02
 Author: Randall Pruim <rpruim@calvin.edu>
 Maintainer: Randall Pruim <rpruim@calvin.edu>
 Description: Body Shape and related measurements from the US National Health

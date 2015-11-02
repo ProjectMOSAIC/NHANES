@@ -169,7 +169,7 @@ For more information on these variables, see
 \describe{
 \item{DirectChol}{Direct HDL cholesterol in mmol/L.
       Reported for participants aged 6 years or older.}
-\item{TotChol}{Total HDL cholesterol in mmol/L.
+\item{TotChol}{Total cholesterol in mmol/L.
       Reported for participants aged 6 years or older.}
 \item{UrineVol1}{Urine volume in mL -- first test.
       Reported for participants aged 6 years or older.}

@@ -117,7 +117,7 @@
 #' 	  participants aged 0 to 2 years for 2011 to 2012 data.} 
 #' 	\item{Race1}{Reported race of study participant: Mexican, Hispanic, White, Black, or Other.}
 #' 	\item{Race3}{Reported race of study participant, including non-Hispanic Asian category:
-#' 		Mexican, Hispanic, White, Black, Asian, or Other.  Not availale for 2009-10.}
+#' 		Mexican, Hispanic, White, Black, Asian, or Other.  Not available for 2009-10.}
 #' 	\item{Education}{Educational level of study participant Reported for participants aged 20 years or older.
 #' 		One of \code{8thGrade}, \code{9-11thGrade}, \code{HighSchool}, \code{SomeCollege}, or \code{CollegeGrad}.}
 #'     \item{MaritalStatus}{Marital status of study participant.  Reported for participants aged 20 years or older.

@@ -24,6 +24,7 @@ levels(NHANES$Education) <- c("8th Grade", "9 - 11th Grade", "High School", "Som
 NHANES$Race1 <- reLevel(NHANES$Race1, c("Black", "Hispanic", "Mexican", "White", "Other"))
 NHANES$Race3 <- reLevel(NHANES$Race3, c("Asian", "Black", "Hispanic", "Mexican", "White", "Other"))
 
+NHANES$Sex <- NHANES$Gender
 
 NHANESraw$Depressed <- reLevel(NHANESraw$Depressed, c("None", "Several", "Most"))
 NHANESraw$LittleInterest <- reLevel(NHANESraw$LittleInterest, c("None", "Several", "Most"))
@@ -35,6 +36,8 @@ levels(NHANESraw$Education) <- c("8th Grade", "9 - 11th Grade", "High School", "
 NHANESraw$Race1 <- reLevel(NHANESraw$Race1, c("Black", "Hispanic", "Mexican", "White", "Other"))
 NHANESraw$Race3 <- reLevel(NHANESraw$Race3, c("Asian", "Black", "Hispanic", "Mexican", "White", "Other"))
 
+NHANESraw$Sex <- NHANESraw$Gender
+
 NHANESraw <- 
   dplyr::rename(NHANESraw, 
                 CompHrsDay = TVHrsDay.1,     # need to confirm this
@@ -43,6 +46,20 @@ NHANESraw <-
   )
 
 source("addVars.R")
+
+nnn <- names(NHANES)
+NHANES <- 
+  NHANES %>% select(ID, SurveyYr, Sex, SexOrientation, Age:SameSex, PregnantNow, Gender)
+assertthat::assert_that(identical(setdiff(nnn, names(NHANES)), character(0)))
+
+nnn <- names(NHANESraw)
+NHANESraw <- 
+  NHANESraw %>% select(ID, SurveyYr, Sex, SexOrientation, Age:SameSex, 
+                       WTINT2YR:SDMVSTRA, PregnantNow, Gender)
+assertthat::assert_that(identical(setdiff(nnn, names(NHANESraw)), character(0)))
+
+devtools::use_data(NHANES, overwrite = TRUE)
+devtools::use_data(NHANESraw, overwrite = TRUE)
 
 # Note:  TVHrsDay and TVHrsDay.1 in NHANESraw
 

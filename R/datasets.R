@@ -108,7 +108,10 @@
 #' \url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm} or
 #' \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm}.
 #' \describe{
-#' 	\item{Gender}{Gender (sex) of study participant	coded as \code{male} or \code{female}}
+#' 	\item{Sex}{Sex of study participant	coded as \code{male} or \code{female}}
+#'  \item{SexOrientation}{participant's sexual orientation (self-described).    
+#'    Reported for participants aged 18 to 59 years.
+#'    One of \code{Heterosexual}, \code{Homosexual}, \code{Bisexual}.}
 #' 	\item{Age}{Age in years at screening of study participant.  Note:  Subjects 80 years or older were
 #' 	  recorded as 80.}
 #' 	\item{AgeDecade}{Categorical variable derived from age with levels \code{0-9}, \code{10-19}, \dots \code{70+}}	
@@ -301,9 +304,8 @@
 #' the past 12 months. Reported for participants aged 18 to 59 years.}
 #' \item{SameSex}{Participant has had any kind of sex with a same sex partner. 
 #' Reported for participants aged 18 to 69 years ad \code{Yes} or \code{No}.}
-#' \item{SexOrientation}{participant's sexual orientation (self-described).    
-#' Reported for participants aged 18 to 59 years.
-#'  One of \code{Heterosexual}, \code{Homosexual}, \code{Bisexual}.}
+#' 	\item{Gender}{Sex of study participant	coded as \code{male} or \code{female}, maintained
+#' 	for backwards compatibility.}
 #' }
 #' 
 #' @section Weighting Variables (\code{NHANESraw} only):

@@ -4,7 +4,7 @@
 \name{NHANES}
 \alias{NHANES}
 \alias{NHANESraw}
-\title{NHANES 2009-2012 with adjusted weighting}
+\title{NHANES 2009-2012 data}
 \format{
 data frames with raw and resampled versions of the NHANES data.  See below for details 
 and descriptions of the varaibles.
@@ -32,7 +32,7 @@ The NHANES target population is "the non-institutionalized civilian resident
 population of the United States".  
 NHANES, (American National Health
 and Nutrition Examination surveys), use complex survey designs (see
-http://www.cdc.gov/nchs/data/series/sr_02/sr02_162.pdf) that oversample certain
+https://www.cdc.gov/nchs/data/series/sr_02/sr02_162.pdf) that oversample certain
 subpopulations like racial minorities. Naive analysis of the original NHANES
 data can lead to mistaken conclusions. The percentages of people from each
 racial group in the data, for example, are quite different from the way they
@@ -55,7 +55,7 @@ NHANES documentation.
 
 The following warning comes directly from the NHANES web site:
 
-For NHANES datasets, the use of sampling weights and sample design variables 
+For NHANES dataset, the use of sampling weights and sample design variables 
 is recommended for all analyses because the sample design is a clustered design 
 and incorporates differential probabilities of selection.  
 If you fail to account for the sampling parameters, you may obtain biased estimates 
@@ -73,11 +73,11 @@ instructions given there. Further details and relevant documentation can be
 found on the following NHANES websites 
 \itemize{
 \item
-\url{http://www.cdc.gov/nchs/nhanes.htm},
+\url{https://www.cdc.gov/nchs/nhanes.htm},
 \item
-\url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes11_12.aspx}, and 
+\url{https://wwwn.cdc.gov/nchs/nhanes/search/nhanes11_12.aspx}, and 
 \item
-\url{http://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
+\url{https://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
 }
 }
 
@@ -92,8 +92,8 @@ found on the following NHANES websites
 \section{Demographic Variables}{
 
 For more information on these demographic variables, see
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm} or
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm}.
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm} or
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm}.
 \describe{
 	\item{Sex}{Sex of study participant	coded as \code{male} or \code{female}}
  \item{SexOrientation}{participant's sexual orientation (self-described).    
@@ -131,8 +131,8 @@ For more information on these demographic variables, see
 \section{Physical Measurements}{
 
 For more information on body measurements, see 
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/BMX_F.htm} and 
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/BMX_G.htm}.
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/BMX_F.htm} and 
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/BMX_G.htm}.
 \describe{
 \item{Weight}{Weight in kg}
 \item{Length}{Recumbent length in cm. Reported for participants aged 0 - 3 years.
@@ -171,10 +171,10 @@ following the procedure outlined for BPXDAR.}
 \section{Health Variables}{
 
 For more information on these variables, see
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/HDL_F.htm} or
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/HDL_G.htm}.
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/HDL_F.htm} or
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/HDL_G.htm}.
 \describe{
-\item{DirectChol}{Direct HDL cholesterol in mmol/L.
+\item{DirectChol}{Direct cholesterol in mmol/L.
       Reported for participants aged 6 years or older.}
 \item{TotChol}{Total cholesterol in mmol/L.
       Reported for participants aged 6 years or older.}
@@ -245,8 +245,8 @@ there are missing values.
 \section{Lifestyle Variables}{
 
 More information about these variables is available at
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/SMQ_F.htm} or 
-\url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/SMQ_G.htm}.
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/SMQ_F.htm} or 
+\url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/SMQ_G.htm}.
 \describe{
 \item{PhysActive}{Participant does moderate or vigorous-intensity sports, fitness or recreational 
 activities (Yes or No).  Reported for participants 12 years or older.}
@@ -311,11 +311,11 @@ Reported for participants aged 18 to 69 years ad \code{Yes} or \code{No}.}
   For more details see one of the following.
   \itemize{
   \item
-  \url{http://www.cdc.gov/Nchs/tutorials/environmental/orientation/sample_design/index.htm}
+  \url{https://www.cdc.gov/Nchs/tutorials/environmental/orientation/sample_design/index.htm}
   \item
-  \url{http://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm#WTINT2YR} and 
+  \url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm#WTINT2YR} and 
   \item
-  \url{http://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm#WTINT2YR} 
+  \url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm#WTINT2YR} 
   }
   }
 }

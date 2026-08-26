@@ -1,16 +1,17 @@
 
 ## Test environments
 
- * local OS X: R version 3.2.1 Patched (2015-06-30 r68608)
- * win-builder: (devel and release) on 2015-07-02
- * Linux (via travis): on 2015-07-02
+* local OS X: R version 4.6.1 (2026-06-24)
+* win-builder: (devel and release) on 2015-07-02
+
+## Note
+
+The change of maintainer email to rpruim@gmail.com is intentional.
 
 ## R CMD check results
 
-There were no ERRORs, WARNINGs, or NOTEs asside from NOTE about CRAN 
-incoming feasibility/maintainer. 
+There were no ERRORs, WARNINGs, or NOTEs 
 
 ## Downstream dependencies
 
-The only reverse dependency is my `mosaic` package (suggests) which only uses this in 
-a vignette.  
+The only changes are to DESCRIPTION and to documentation.

@@ -287,7 +287,7 @@
 #' Reported for participants aged 20 years or older.}
 #' \item{Marijuana}{Participant has tried marijuana. Reported for participants aged 18 to 59 years as
 #' \code{Yes} or \code{No}.}
-#' \code{AgeFirstMarij}{Age participant first tried marijuana. Reported for participants aged 18 to 59 years.}
+#' \item{AgeFirstMarij}{Age participant first tried marijuana. Reported for participants aged 18 to 59 years.}
 #' \item{RegularMarij}{Participant has been/is a regular marijuana user (used at least once a month for a year).
 #'  Reported for participants aged 18 to 59 years as \code{Yes} or \code{No}.}
 #' \item{AgeRegMarij}{Age of participant when first started regularly using marijuana. 

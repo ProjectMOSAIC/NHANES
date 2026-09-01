@@ -17,3 +17,7 @@
 
 # From Chris Wild
 RBuildIgnore/FromChrisWild/
+
+# checking package
+RbuildIgnore/url*md
+

@@ -20,3 +20,4 @@
 ^\.travis\.yml$
 ^README\.Rmd$
 ^README-.*\.png$
+^CRAN-SUBMISSION$

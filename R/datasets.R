@@ -57,11 +57,11 @@
 #' found on the following NHANES websites 
 #' \itemize{
 #' \item
-#' \url{https://www.cdc.gov/nchs/nhanes.htm},
+#' \url{https://www.cdc.gov/nchs/nhanes/index.html},
 #' \item
-#' \url{https://wwwn.cdc.gov/nchs/nhanes/search/nhanes11_12.aspx}, and 
+#' \url{https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&CycleBeginYear=2009}, and 
 #' \item
-#' \url{https://wwwn.cdc.gov/nchs/nhanes/search/nhanes09_10.aspx}.
+#' \url{https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&CycleBeginYear=2011}.
 #' }
 #' 
 #' @source
@@ -105,8 +105,8 @@
 #'   
 #' @section Demographic Variables:
 #' For more information on these demographic variables, see
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm} or
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm}.
+#' \url{https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overview.aspx?BeginYear=2009}, and 
+#' \url{https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overview.aspx?BeginYear=2011}.
 #' \describe{
 #' 	\item{Sex}{Sex of study participant	coded as \code{male} or \code{female}}
 #'  \item{SexOrientation}{participant's sexual orientation (self-described).    
@@ -142,8 +142,8 @@
 #' 
 #' @section Physical Measurements:
 #' For more information on body measurements, see 
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/BMX_F.htm} and 
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/BMX_G.htm}.
+#' \url{https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BMX_F.htm} and
+#' \url{https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.htm}.
 #' \describe{
 #' \item{Weight}{Weight in kg}
 #' \item{Length}{Recumbent length in cm. Reported for participants aged 0 - 3 years.
@@ -179,8 +179,8 @@
 #' }
 #' @section Health Variables:
 #' For more information on these variables, see
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/HDL_F.htm} or
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/HDL_G.htm}.
+#' \url{https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/HDL_F.htm} or 
+#' \url{https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/HDL_G.htm}.
 #' \describe{
 #' \item{DirectChol}{Direct cholesterol in mmol/L.
 #'       Reported for participants aged 6 years or older.}
@@ -250,8 +250,8 @@
 #' }
 #' @section Lifestyle Variables:
 #' More information about these variables is available at
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/SMQ_F.htm} or 
-#' \url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/SMQ_G.htm}.
+#' \url{https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/SMQ_F.htm} or 
+#' \url{https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SMQ_G.htm}.
 #' \describe{
 #' \item{PhysActive}{Participant does moderate or vigorous-intensity sports, fitness or recreational 
 #' activities (Yes or No).  Reported for participants 12 years or older.}
@@ -310,18 +310,10 @@
 #' 
 #' @section Weighting Variables (\code{NHANESraw} only):
 #' \describe{
-#'   \item{WTINT2YR, WTMEC2YR,  SDMVPSU,  SDMVSTRA}{Sample weighting variables.  
-#'   For more details see one of the following.
-#'   \itemize{
-#'   \item
-#'   \url{https://www.cdc.gov/Nchs/tutorials/environmental/orientation/sample_design/index.htm}
-#'   \item
-#'   \url{https://www.cdc.gov/nchs/nhanes/nhanes2009-2010/DEMO_F.htm#WTINT2YR} and 
-#'   \item
-#'   \url{https://www.cdc.gov/nchs/nhanes/nhanes2011-2012/DEMO_G.htm#WTINT2YR} 
-#'   }
-#'   }
-#' }
+#'   \item{WTINT2YR, WTMEC2YR,  SDMVPSU,  SDMVSTRA}{Sample weighting 
+#'   variables.  For more details see
+#'   \url{https://wwwn.cdc.gov/nchs/nhanes/tutorials/sampledesign.aspx}.
+#' }}
 #' 
 
 NA

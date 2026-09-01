@@ -14,4 +14,4 @@ There were no ERRORs, WARNINGs, or NOTEs
 
 ## Downstream dependencies
 
-The only changes are to DESCRIPTION and to documentation.
+The only changes are to DESCRIPTION and to documentation, mainly to fix CDC URLs that had moved.

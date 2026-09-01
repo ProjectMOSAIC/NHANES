@@ -1,8 +1,8 @@
 Package: NHANES
 Type: Package
 Title: Data from the US National Health and Nutrition Examination Study
-Version: 2.1.2
-Date: 2026-08-26
+Version: 2.1.4
+Date: 2026-08-31
 Authors@R: c(
     person("Randall", "Pruim", email = "rpruim@gmail.com", role = c("aut","cre"))
     )
